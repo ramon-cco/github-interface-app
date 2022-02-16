@@ -17,13 +17,15 @@ export const WrapperInforUser = styled.div`
         font-size:32px;
         font-weught: bold;
     };
+
     h3{
         font-size:18px;
-        font-weught: bold;
+        font-weight: bold;
     };
+
     h4{
         font-size:16px;
-        font-weught: bold;
+        font-weight: bold;
     }
 `;
 
@@ -36,7 +38,7 @@ export const WrapperStatusCount = styled.div`
     }
 `;
 
-export const WrapperUserName = styled.div`
+export const WrapperUserGeneric = styled.div`
     display: flex;
     align-items: center;
     margin-top: 8px;

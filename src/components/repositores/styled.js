@@ -13,7 +13,7 @@ export const WrapperTabList =  styled(TabList)`
     display: flex;
     margin: 0;
 `;
-WrapperTabList.tabsRole = "Tablist";
+WrapperTabList.tabsRole = "TabList";
 
 export const WrapperTab =  styled(Tab)`
     border-radius: 16px;
@@ -22,7 +22,7 @@ export const WrapperTab =  styled(Tab)`
     user-select: none;
     cursor: pointer;
     z-index: 99999;
-    background-clor: "#fff";
+    background-color: "#fff";
     margin: 8px;
 
     &:focus {
@@ -30,7 +30,7 @@ export const WrapperTab =  styled(Tab)`
     }
 
     &.is-selected {
-        box-shadow: 3px 2px 8px rgba(0, 0, 0, 0.5);
+        box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.2);
     }
 `;
 WrapperTab.tabsRole = "Tab";
@@ -38,13 +38,21 @@ WrapperTab.tabsRole = "Tab";
 export const WrapperTabPanel =  styled(TabPanel)`
     padding: 16px;
     border: 1px solid "#ccc";
-    // box-shadow: 0 0 0.3em rgba(0, 0, 0, 0.3)
-    display:none;
-    margin-top: -5px;
+    //box-shadow: 0 0 0.3em rgba(0, 0, 0, 0.3);
+    display: none;
+    margin-top: -12px;
 
-    &.is-selected{
+    &.is-selected {
         display: block;
     }
 `;
 
-WrapperTablist.tabsRole = "TabPanel";
+WrapperTabPanel.tabsRole = "TabPanel";
+
+
+export const WrapperList = styled.div `
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+`; 
